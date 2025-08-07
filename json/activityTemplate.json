@@ -1,0 +1,39 @@
+{
+    "id": 321,
+    "activityType": "tree_survey",
+    "code": 6212,
+    "configuration": {
+        "manualDBH": "hidden",
+        "treeHealth": "required",
+        "treeComment": "optional",
+        "imageQuality": 90,
+        "manualHeight": "hidden",
+        "specie_codes": [
+            "artocarpus_heterophyllus",
+            "areca_catechu",
+            "parkia_speciosa_kettering",
+            "persea_americana_kettering",
+            "archidendron_pauciflorum_kettering",
+            "durio_zibethinus_kettering"
+        ],
+        "addTreeSpecies": false,
+        "imageResolution": 1000,
+        "groundCoverRequired": false,
+        "gpsAccuracyThreshold": 10,
+        "stopMeasurementsOutsidePlot": false
+    },
+    "title": {
+        "en-GB": "tree_import"
+    },
+    "description": {
+        "en-GB": "tree_import"
+    },
+    "isActive": true,
+    "autoGenerateOffset": 0,
+    "activityTemplateType": "manual",
+    "projectID": 140,
+    "frequency": "adhoc",
+    "createdAt": "2025-08-02T05:30:45.189Z",
+    "updatedAt": "2025-08-02T05:32:10.967Z",
+    "questionnaire": []
+}
