@@ -1,7 +1,7 @@
 {
-    "id": 321,
+    "id": 276,
     "activityType": "tree_survey",
-    "code": 6212,
+    "code": 943753,
     "configuration": {
         "manualDBH": "hidden",
         "treeHealth": "required",
@@ -23,17 +23,102 @@
         "stopMeasurementsOutsidePlot": false
     },
     "title": {
-        "en-GB": "tree_import"
+        "en-GB": "Tree Monitoring",
+        "in-ID": "Monitoring Pohon"
     },
     "description": {
-        "en-GB": "tree_import"
+        "en-GB": "Record all planted trees on a plot",
+        "in-ID": "Monitor semua pohon yang ditanam pada plot Anda"
     },
     "isActive": true,
     "autoGenerateOffset": 0,
     "activityTemplateType": "manual",
-    "projectID": 140,
+    "projectID": 117,
     "frequency": "adhoc",
-    "createdAt": "2025-08-02T05:30:45.189Z",
-    "updatedAt": "2025-08-02T05:32:10.967Z",
-    "questionnaire": []
+    "createdAt": "2025-03-26T07:15:27.921Z",
+    "updatedAt": "2025-07-28T07:48:30.943Z",
+    "questionnaire": [
+        {
+            "id": 155,
+            "projectID": 117,
+            "configuration": {
+                "pages": [
+                    {
+                        "header": {
+                            "en-GB": "Reason for mortality",
+                            "in-ID": "Alasan kematian"
+                        },
+                        "options": [
+                            {
+                                "code": "climate",
+                                "title": {
+                                    "en-GB": "Climate",
+                                    "in-ID": "Iklim"
+                                }
+                            },
+                            {
+                                "code": "pests",
+                                "title": {
+                                    "en-GB": "Pests / Diseases",
+                                    "in-ID": "Hama / Penyakit"
+                                }
+                            },
+                            {
+                                "code": "livestock",
+                                "title": {
+                                    "en-GB": "livestock / Wildlife",
+                                    "in-ID": "Ternak / Hewan Liar"
+                                }
+                            },
+                            {
+                                "code": "seed_quality",
+                                "title": {
+                                    "en-GB": "Seed quality",
+                                    "in-ID": "Kualitas Bibit yang kurang bagus"
+                                }
+                            },
+                            {
+                                "code": "human_factor",
+                                "title": {
+                                    "en-GB": "Human Factor",
+                                    "in-ID": "Faktor Manusia"
+                                }
+                            },
+                            {
+                                "code": "unknown_reason",
+                                "title": {
+                                    "en-GB": "Unknown Reason",
+                                    "in-ID": "Penyebab yang tidak diketahui"
+                                }
+                            }
+                        ],
+                        "pageType": "checkbox",
+                        "mandatory": true,
+                        "description": {
+                            "en-GB": "What is the reason for mortality?",
+                            "in-ID": "Apa yang menyebabkan pohon mati?"
+                        },
+                        "questionCode": "reason_mortality"
+                    },
+                    {
+                        "header": {
+                            "en-GB": "Notes",
+                            "in-ID": "Catatan Lainnya"
+                        },
+                        "options": [],
+                        "pageType": "text_short",
+                        "mandatory": false,
+                        "description": {
+                            "en-GB": "Other important information on this plot?",
+                            "in-ID": "Apakah Anda memiliki komentar atau catatan lainnya untuk plot ini?"
+                        },
+                        "questionCode": "notes"
+                    }
+                ]
+            },
+            "activityTemplateID": 276,
+            "type": "post_questionnaire",
+            "active": true
+        }
+    ]
 }
