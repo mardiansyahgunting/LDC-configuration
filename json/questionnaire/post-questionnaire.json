@@ -1,0 +1,148 @@
+{
+  "configuration": {
+    "pages": [
+      {
+        "header": {
+          "en-GB": "Reason for mortality",
+          "in-ID": "Alasan kematian"
+        },
+        "options": [
+          {
+            "code": "climate",
+            "title": {
+              "en-GB": "Climate",
+              "in-ID": "Iklim"
+            }
+          },
+          {
+            "code": "pests",
+            "title": {
+              "en-GB": "Pests / Diseases",
+              "in-ID": "Hama / Penyakit"
+            }
+          },
+          {
+            "code": "livestock",
+            "title": {
+              "en-GB": "livestock / Wildlife",
+              "in-ID": "Ternak / Hewan Liar"
+            }
+          },
+          {
+            "code": "seed_quality",
+            "title": {
+              "en-GB": "Seed quality",
+              "in-ID": "Kualitas Bibit yang kurang bagus"
+            }
+          },
+          {
+            "code": "human_factor",
+            "title": {
+              "en-GB": "Human Factor",
+              "in-ID": "Faktor Manusia"
+            }
+          },
+          {
+            "code": "unknown_reason",
+            "title": {
+              "en-GB": "Unknown Reason",
+              "in-ID": "Penyebab yang tidak diketahui"
+            }
+          }
+        ],
+        "pageType": "checkbox",
+        "mandatory": true,
+        "description": {
+          "en-GB": "What is the reason for mortality?",
+          "in-ID": "Apa yang menyebabkan pohon mati?"
+        },
+        "questionCode": "reason_mortality"
+      },
+      {
+        "header": {
+          "en-GB": "Maintenance that has been carried out",
+          "in-ID": "Pemeliharaan yang telah dilakukan"
+        },
+        "options": [
+          {
+            "code": "prunning",
+            "title": {
+              "en-GB": "Prunning",
+              "in-ID": "Pemangkasan"
+            }
+          },
+          {
+            "code": "manual_weeding",
+            "title": {
+              "en-GB": "Manual Weeding",
+              "in-ID": "Penyiangan Manual"
+            }
+          },
+          {
+            "code": "disease_control",
+            "title": {
+              "en-GB": "Manual outbreak/disease control",
+              "in-ID": "Pengendalian wabah / penyakit manual"
+            }
+          },
+          {
+            "code": "organic_pesticides",
+            "title": {
+              "en-GB": "Organic Pesticides",
+              "in-ID": "Penggunaan Pestisida Organik"
+            }
+          },
+          {
+            "code": "non_organic_pesticides",
+            "title": {
+              "en-GB": "Use of Non-Organic Pesticides",
+              "in-ID": "Pengunaan Pestisida Non-Organik"
+            }
+          },
+          {
+            "code": "organic_fertilizer",
+            "title": {
+              "en-GB": "Organic fertilizer",
+              "in-ID": "Pupuk Organik"
+            }
+          },
+          {
+            "code": "chemical_fertilizers",
+            "title": {
+              "en-GB": "Chemical Fertilizers",
+              "in-ID": "Pupuk Kimia"
+            }
+          },
+          {
+            "code": "Watering",
+            "title": {
+              "en-GB": "Watering",
+              "in-ID": "Penyiraman"
+            }
+          }
+        ],
+        "pageType": "checkbox",
+        "mandatory": true,
+        "description": {
+          "en-GB": "Select a maximum of 3 of the answer choices",
+          "in-ID": "Pilih maksimal 3 dari pilihan jawaban"
+        },
+        "questionCode": "maintenance"
+      },
+      {
+        "header": {
+          "en-GB": "Notes",
+          "in-ID": "Catatan Lainnya"
+        },
+        "options": [],
+        "pageType": "text_short",
+        "mandatory": false,
+        "description": {
+          "en-GB": "Other important information on this plot?",
+          "in-ID": "Apakah Anda memiliki komentar atau catatan lainnya untuk plot ini?"
+        },
+        "questionCode": "notes"
+      }
+    ]
+  }
+}
