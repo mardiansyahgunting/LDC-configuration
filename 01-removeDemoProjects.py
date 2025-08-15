@@ -9,7 +9,8 @@ TOKEN = os.getenv("tokenP")
 
 # Step 2: Define IDs using a multiline string and .split()
 user_rule_ids_string = """
-20564
+10227
+20549
 """
 user_rule_ids = user_rule_ids_string.split()
 

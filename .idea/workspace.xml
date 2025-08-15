@@ -5,17 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2509406a-4ecc-4469-9cb5-01b70de1858c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/00-treeSurvey_plots-specific.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-removeDemoProjects.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/help/raw_treeSurvey_plots.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/query/roles.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patch/planned-activity/01 PAIds.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patch/planned-activity/02 patchPlannedAcitivty.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patch/plots/01-data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patch/plots/02-patchPlotOwner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-assignRoles.py" beforeDir="false" afterPath="$PROJECT_DIR$/02-assignRoles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-plannedActivity.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-plannedActivity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-removeDemoProjects.py" beforeDir="false" afterPath="$PROJECT_DIR$/01-removeDemoProjects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/plots.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots.geojson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/activityTemplate.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/activityTemplate.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/query/plannedActivity.sql" beforeDir="false" afterPath="$PROJECT_DIR$/query/plannedActivity.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/query/roles.sql" beforeDir="false" afterPath="$PROJECT_DIR$/query/roles.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/query/user-list.sql" beforeDir="false" afterPath="$PROJECT_DIR$/query/user-list.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SQL File" />
         <option value="Python Script" />
+        <option value="SQL File" />
       </list>
     </option>
   </component>
@@ -46,7 +49,9 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.01-removeDemoProjects.executor": "Run",
+    "Python.02 patchPlannedAcitivty.executor": "Run",
     "Python.02-assignRoles.executor": "Run",
+    "Python.02-patchPlotOwner.executor": "Run",
     "Python.02-plannedActivity (1).executor": "Run",
     "Python.02-plannedActivity.executor": "Run",
     "Python.02_plannedActivity (1).executor": "Run",
@@ -56,7 +61,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/mardi/Repo/LDC-configuration/help",
+    "last_opened_file_path": "C:/Users/mardi/Repo/LDC-configuration/patch/plots",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,14 +77,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mardi\Repo\LDC-configuration\patch\plots" />
       <recent name="C:\Users\mardi\Repo\LDC-configuration\help" />
       <recent name="C:\Users\mardi\Repo\LDC-configuration" />
       <recent name="C:\Users\mardi\Repo\LDC-configuration\demo" />
       <recent name="C:\Users\mardi\Repo\LDC-configuration\data" />
-      <recent name="C:\Users\mardi\Repo\LDC-configuration\json" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mardi\Repo\LDC-configuration\patch\planned-activity" />
+      <recent name="C:\Users\mardi\Repo\LDC-configuration\patch" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.03-plannedActivity (1)">
+  <component name="RunManager" selected="Python.02-patchPlotOwner">
     <configuration name="01-removeDemoProjects" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LDC-configuration" />
       <option name="ENV_FILES" value="" />
@@ -103,6 +112,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="02 patchPlannedAcitivty" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LDC-configuration" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/patch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\mardi\Repo\LDC-configuration\patch\planned-activity\02 patchPlannedAcitivty.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="02-assignRoles" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LDC-configuration" />
       <option name="ENV_FILES" value="" />
@@ -118,6 +150,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02-assignRoles.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="02-patchPlotOwner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LDC-configuration" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/patch/plots" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/patch/plots/02-patchPlotOwner.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,67 +227,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="03-plannedActivity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LDC-configuration" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\mardi\Repo\LDC-configuration\03-plannedActivity.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="plannedActivity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LDC-configuration" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\mardi\Repo\LDC-configuration\plannedActivity.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.02-patchPlotOwner" />
+        <item itemvalue="Python.02 patchPlannedAcitivty" />
         <item itemvalue="Python.03-plannedActivity (1)" />
         <item itemvalue="Python.02-assignRoles" />
         <item itemvalue="Python.01-removeDemoProjects" />
-        <item itemvalue="Python.03-plannedActivity" />
-        <item itemvalue="Python.03-plannedActivity" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PY-252.23892.439" />
-        <option value="bundled-python-sdk-b3ae9b5d7125-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.439" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PY-252.23892.515" />
+        <option value="bundled-python-sdk-7e47963ff851-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.515" />
       </set>
     </attachedChunks>
   </component>
@@ -251,6 +260,10 @@
       <workItem from="1754823676536" duration="1047000" />
       <workItem from="1754913831733" duration="323000" />
       <workItem from="1754968361595" duration="3432000" />
+      <workItem from="1755076157824" duration="434000" />
+      <workItem from="1755088194814" duration="574000" />
+      <workItem from="1755090679898" duration="625000" />
+      <workItem from="1755148816731" duration="2057000" />
     </task>
     <servers />
   </component>
@@ -260,9 +273,11 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LDC_configuration$01_removeDemoProjects.coverage" NAME="01-removeDemoProjects Coverage Results" MODIFIED="1754968838868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LDC_configuration$plannedActivity__1_.coverage" NAME="plannedActivity (1) Coverage Results" MODIFIED="1754808413379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LDC_configuration$02_patchPlotOwner.coverage" NAME="02-patchPlotOwner Coverage Results" MODIFIED="1755151934922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/patch/plots" />
     <SUITE FILE_PATH="coverage/LDC_configuration$02_plannedActivity__1_.coverage" NAME="02-plannedActivity (1) Coverage Results" MODIFIED="1754810063478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LDC_configuration$03_plannedActivity__1_.coverage" NAME="03-plannedActivity (1) Coverage Results" MODIFIED="1754969148993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LDC_configuration$02_assignRoles.coverage" NAME="02-assignRoles Coverage Results" MODIFIED="1754968878452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LDC_configuration$02_plannedActivity.coverage" NAME="02-plannedActivity Coverage Results" MODIFIED="1754808362222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LDC_configuration$02_patchPlannedAcitivty.coverage" NAME="02 patchPlannedAcitivty Coverage Results" MODIFIED="1755149325770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/patch" />
   </component>
 </project>

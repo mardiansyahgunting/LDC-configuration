@@ -17,3 +17,10 @@ from "Users"
 where "phoneNumber" in (
       '6281367444156'
     );
+
+
+
+
+-- get email users
+select * from "Users"
+where "firstName" like '%Farandy    %'

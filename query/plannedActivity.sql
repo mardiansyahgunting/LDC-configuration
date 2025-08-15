@@ -2,7 +2,6 @@
 select *
 from "PlannedActivities"
 where "userID" in (
-                   1360,
                    18348,
                    18350,
                    18352,
