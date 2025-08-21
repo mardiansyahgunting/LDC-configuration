@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2509406a-4ecc-4469-9cb5-01b70de1858c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/00-unAssignPA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ids.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/query/plots.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00-treeSurvey_plots-specific.py" beforeDir="false" afterPath="$PROJECT_DIR$/04-treeSurvey_plots-specific.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-plannedActivity.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-plannedActivity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patch/planned-activity/01 PAIds.sql" beforeDir="false" afterPath="$PROJECT_DIR$/patch/planned-activity/01 PAIds.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/plannedActivity.sql" beforeDir="false" afterPath="$PROJECT_DIR$/query/plannedActivity.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/user-list.sql" beforeDir="false" afterPath="$PROJECT_DIR$/query/user-list.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,6 +235,7 @@
       <workItem from="1755578355035" duration="5228000" />
       <workItem from="1755655974717" duration="4767000" />
       <workItem from="1755756047820" duration="711000" />
+      <workItem from="1755756782413" duration="658000" />
     </task>
     <servers />
   </component>
