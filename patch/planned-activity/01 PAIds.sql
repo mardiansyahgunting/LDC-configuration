@@ -7,8 +7,7 @@ where "userID" in (
              18347,
              18349
     )
-and status = 'planned'
-;
+and status = 'planned';
 
 
 

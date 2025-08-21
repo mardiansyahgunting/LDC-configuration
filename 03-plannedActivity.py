@@ -16,6 +16,9 @@ PLOT_IDS_PATH = "C:/Users/mardi/Repo/LDC-configuration/data/plots.csv"
 # List of user IDs. Each ID must be on a new line.
 USER_IDS = """
 18349
+18350
+18352
+18347
 """
 
 def create_payload(user_id, plot_id, template_id, template_config):

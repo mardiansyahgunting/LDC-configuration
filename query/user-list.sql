@@ -3,11 +3,12 @@
 select id, "phoneNumber", "firstName", "lastName", "isActive"
 from "Users"
 where "phoneNumber" in (
-      '6282374858771',
-      '6285609133465',
-      '6281367414456',
-      '6283897183458',
-      '6281119920406'
+                        '6282374858771',
+                        '6285609133465',
+                        '6281367414456',
+                        '6283897183458',
+                        '6281119920406',
+                        '6281367444156'
     );
 
 -- list Users New
@@ -15,12 +16,22 @@ where "phoneNumber" in (
 select id, "phoneNumber", "firstName", "lastName", "isActive"
 from "Users"
 where "phoneNumber" in (
-      '6281367444156'
+    '6281367444156'
     );
 
 
-
-
 -- get email users
-select * from "Users"
+select *
+from "Users"
 where "firstName" like '%Farandy    %'
+
+
+-- get All
+
+select *
+from "PlannedActivities"
+where "userID" in (
+    18352
+    )
+  and "plotID" = 7926
+  and status = 'planned';
